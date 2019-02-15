@@ -26,6 +26,5 @@ checkHelp                    =  checkOne ["-h", "-?", "--help"]
 checkVersion                 =  checkOne ["-v", "--version"]
 checkOne list                =  any (`elem` list) . take 1 <$> getArgs
 
-usage                        =  $(embedFile "./docs/blessed/arx.txt")
-version                      =  $(embedFile "./version")
-
+usage                        =  $(embedFile "external/haskell_arx_96871/docs/blessed/arx.txt")
+version                      =  $(embedFile "external/haskell_arx_96871/version")
